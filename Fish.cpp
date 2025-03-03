@@ -95,7 +95,7 @@ void Fish::moveToStart()
 	int world_vert = (int)WM.getBoundary().getVertical();
 
 	// x is off left side of window.
-	temp_pos.setX(-4.0f);
+	temp_pos.setX(-6.0f);
 
 	// y is in vertical range.
 	//temp_pos.setY(14.0f);
