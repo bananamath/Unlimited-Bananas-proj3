@@ -14,7 +14,7 @@ namespace df
 	{
 	private:
 		std::string m_name;
-		Sprite m_sprite;
+		std::string m_sprite;
 		int m_size;
 		int m_rarity;
 
@@ -25,7 +25,7 @@ namespace df
 		Fish();
 
 		// Fish constructor with parameters given
-		Fish(Sprite sprite, std::string name, int size, int rarity);
+		Fish(std::string sprite, std::string name, int size, int rarity);
 
 		~Fish();
 		int eventHandler(const Event* p_e) override;
@@ -39,8 +39,8 @@ namespace df
 		std::string getFishName() const;
 		void setFishName(std::string name);
 
-		Sprite getFishSprite() const;
-		void setFishSprite(Sprite sprite);
+		std::string getFishSprite() const;
+		void setFishSprite(std::string sprite);
 
 		int getFishSize() const;
 		void setFishSize(int size);

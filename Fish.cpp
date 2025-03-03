@@ -15,7 +15,7 @@ using namespace df;
 
 Fish::Fish()
 {
-	m_sprite = NULL;
+	m_sprite = "";
 	setType("Fish");
 
 	setSprite("shadow");
@@ -26,7 +26,7 @@ Fish::Fish()
 	moveToStart();
 }
 
-Fish::Fish(Sprite sprite, std::string name, int size, int rarity)
+Fish::Fish(std::string sprite, std::string name, int size, int rarity)
 {
 	setType("Fish");
 
@@ -173,11 +173,12 @@ void Fish::setFishName(std::string name) {
 	return;
 }
 
-Sprite Fish::getFishSprite() const {
+std::string Fish::getFishSprite() const {
 	return m_sprite;
 }
-void Fish::setFishSprite(Sprite sprite) {
+void Fish::setFishSprite(std::string sprite) {
 	m_sprite = sprite;
+	return;
 }
 
 int Fish::getFishSize() const {
