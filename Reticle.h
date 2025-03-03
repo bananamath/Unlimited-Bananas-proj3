@@ -1,16 +1,21 @@
 #pragma once
 
 #include "Object.h"
+#include "Lure.h"
 
 #define RETICLE_CHAR '+'
 
-class Reticle : public df::Object
+namespace df
 {
-	private:
-		std::string color;
+	class Reticle : public df::Object
+	{
+		private:
+			std::string sprite;
+			Lure *lure;
 
-	public:
-		Reticle();
-		int draw(void) override;
-		int eventHandler(const df::Event *p_e) override;
-};
+		public:
+			Reticle();
+			int draw(void) override;
+			int eventHandler(const df::Event *p_e) override;
+	};
+}

@@ -138,7 +138,7 @@ int ResourceManager::loadSprite(std::string filename, std::string label)
             }
             else
             {
-                LM.writeLog("ResouceManager: Error on line 5. %s unknown color.", line);
+                LM.writeLog("ResourceManager: Error on line 5. %s unknown color.", line);
                 error = true;
                 break;
             }
@@ -162,14 +162,14 @@ int ResourceManager::loadSprite(std::string filename, std::string label)
 
                     if (line == "")
                     {
-                        LM.writeLog("ResouceManager: Error on line %d. Incorrect frame height.", line_number);
+                        LM.writeLog("ResourceManager: Error on line %d. Incorrect frame height.", line_number);
                         error = true;
                         break;
                     }
 
                     if (line.length() != width)
                     {
-                        LM.writeLog("ResouceManager: Error on line %d. Incorrect frame width.", line_number);
+                        LM.writeLog("ResourceManager: Error on line %d. Incorrect frame width.", line_number);
                         error = true;
                         break;
                     }

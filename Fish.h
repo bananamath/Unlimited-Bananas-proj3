@@ -4,25 +4,30 @@
 
 // Engine includes
 #include "Object.h"
+#include "EventCollision.h"
 
-class Fish : public df::Object
+namespace df
 {
-private:
-	std::string m_name;
-	//size range
-	//sprite - i think we need derived objects of this derived object
-	// there's prob several decent ways we could implement different Fish types
-	//name
-	//speed and/or movement pattern
-	//rarity
+	class Fish : public Object
+	{
+	private:
+		std::string m_name;
+		//size range
+		//sprite - i think we need derived objects of this derived object
+		// there's prob several decent ways we could implement different Fish types
+		//name
+		//speed and/or movement pattern
+		//rarity
+		int move_cooldown;
 
-public:
-	Fish();
-	~Fish();
-	int eventHandler(const df::Event* p_e) override;
-	
-	void out();
-	void hit(const df::EventCollision* p_collision_event);
-	void moveToStart();
-	void moveShadow();
-};
+	public:
+		Fish();
+		~Fish();
+		int eventHandler(const Event* p_e) override;
+		
+		void out();
+		void hit(const EventCollision* p_collision_event);
+		void moveToStart();
+		void moveShadow();
+	};
+}
