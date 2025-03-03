@@ -14,7 +14,7 @@ using namespace df;
 
 Fish::Fish()
 {
-	setSprite("guppy");
+	setSprite("shadow");
 
 	setType("Fish");
 

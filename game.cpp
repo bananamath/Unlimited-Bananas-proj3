@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
 	RM.loadSprite("sprites/ff-spr-castbar.txt", "castbar");
 	RM.loadSprite("sprites/ff-spr-lure.txt", "lure");
 	RM.loadSprite("sprites/ff-spr-guppy.txt", "guppy");
+	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
 
 	// Set world boundaries to 80 horizontal, 24 vertical.
 	WM.setBoundary(Box(Vector(0,0),80,24));
