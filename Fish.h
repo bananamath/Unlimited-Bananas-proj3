@@ -15,17 +15,19 @@ namespace df
 	private:
 		std::string m_name;
 		std::string m_sprite;
-		int m_size;
-		int m_rarity;
+		int m_size;				// length in inches
+		std::string m_rarity;
+		int m_speed;
 
 		int move_cooldown;
+
 
 	public:
 		// Default Fish constructor
 		Fish();
 
 		// Fish constructor with parameters given
-		Fish(std::string sprite, std::string name, int size, int rarity);
+		/*Fish(std::string sprite, std::string name, int size, std::string rarity);*/
 
 		~Fish();
 		int eventHandler(const Event* p_e) override;
@@ -45,8 +47,11 @@ namespace df
 		int getFishSize() const;
 		void setFishSize(int size);
 
-		int getFishRarity() const;
-		void setFishRarity(int rarity);
+		std::string getFishRarity() const;
+		void setFishRarity(std::string rarity);
+
+		int getFishSpeed() const;
+		void setFishSpeed(int speed);
 	};
 }
 #endif // __FISH_H__

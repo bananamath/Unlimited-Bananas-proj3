@@ -20,6 +20,9 @@ ViewCaught::ViewCaught()
 
 int ViewCaught::draw()
 {
+
+    //draw a black rectangle for background
+
     //// Display view_string + value.
     //std::string temp_str = "";
     //if (m_border == true)

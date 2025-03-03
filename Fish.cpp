@@ -15,36 +15,98 @@ using namespace df;
 
 Fish::Fish()
 {
+	m_name = "";
 	m_sprite = "";
+	m_rarity = "";
+	m_size = 0;
+	move_cooldown = 0;
 	setType("Fish");
 
 	setSprite("shadow");
 
 	setSolidness(SOFT);
 
-	move_cooldown = 0;
+	// Switch statement for random fish creation
+	int rval = rand() % 100;
+
+	if (rval < 33) {
+		//guppy
+		setFishName("Guppy");
+		setFishSprite("guppy");
+		setFishRarity("Common");
+		setFishSpeed(20);	// SLOW
+
+		int minLength = 3;
+		int maxLength = 10;
+		int r = 1 / (rand() % 100);
+		int sz = (r * maxLength) + minLength;
+		setFishSize(sz);
+	}
+	else if (rval < 66) {
+		//salmon
+		setFishName("Ampersalmon");
+		setFishSprite("ampersalmon");
+		setFishRarity("Common");
+		setFishSpeed(10);	// MEDIUM
+
+		int minLength = 6;
+		int maxLength = 24;
+		int r = 1 / (rand() % 100);
+		int sz = (r * maxLength) + minLength;
+		setFishSize(sz);
+	}
+	else if (rval < 83) {
+		//eel
+		setFishName("Eel");
+		setFishSprite("eel");
+		setFishRarity("Uncommon");
+		setFishSpeed(5);	// FAST
+
+		int minLength = 8;
+		int maxLength = 20;
+		int r = 1 / (rand() % 100);
+		int sz = (r * maxLength) + minLength;
+		setFishSize(sz);
+	}
+	else {
+		//boot
+		setFishName("Boot");
+		setFishSprite("boot");
+		setFishRarity("Uncommon");
+		setFishSpeed(20);	// SLOW
+
+		int minLength = 8;
+		int maxLength = 7;	//dont worry about it (maxLength is a misnomer)
+		int r = 1 / (rand() % 100);
+		int sz = (r * maxLength) + minLength;
+		setFishSize(sz);
+	}
+
+	LM.writeLog("Made a fish! It's a %s with length: %d", getFishName().c_str(), getFishSize());
+
 	moveToStart();
 }
 
-Fish::Fish(std::string sprite, std::string name, int size, int rarity)
-{
-	setType("Fish");
-
-	setSprite("shadow");
-	setFishSprite(sprite);
-	setFishName(name);
-	setFishSize(size);
-	setFishRarity(rarity);
-
-	setSolidness(SOFT);
-
-	move_cooldown = 0;
-	moveToStart();
-}
+//Fish::Fish(std::string sprite, std::string name, int size, std::string rarity)
+//{
+//	setType("Fish");
+//
+//	setSprite("shadow");
+//	setFishSprite(sprite);
+//	setFishName(name);
+//	setFishSize(size);
+//	setFishRarity(rarity);
+//
+//	setSolidness(SOFT);
+//
+//	move_cooldown = 0;
+//	moveToStart();
+//}
 
 Fish::~Fish()
 {
 	// Send view event?
+	// spawn a new Fish
 }
 
 // Handle event.
@@ -97,6 +159,12 @@ void Fish::hit(const EventCollision* p_collision_event)
 
 		// TODO: catch opportunity
 		LM.writeLog("Fish::hit() - There's a bite!");
+		
+		// delete current fish
+		WM.markForDelete(this);
+
+		// create new fish
+		Fish();
 	}
 	
 	return;
@@ -189,10 +257,18 @@ void Fish::setFishSize(int size) {
 	return;
 }
 
-int Fish::getFishRarity() const {
+std::string Fish::getFishRarity() const {
 	return m_rarity;
 }
-void Fish::setFishRarity(int rarity) {
+void Fish::setFishRarity(std::string rarity) {
 	m_rarity = rarity;
+	return;
+}
+
+int Fish::getFishSpeed() const {
+	return m_speed;
+}
+void Fish::setFishSpeed(int speed) {
+	m_speed = speed;
 	return;
 }
