@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __OBJECT_H__
+#define __OBJECT_H__
 
 #include <string>
 
@@ -121,3 +122,4 @@ namespace df
 			Box getBox() const;
 	};
 }
+#endif //__OBJECT_H__

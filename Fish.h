@@ -1,6 +1,7 @@
 // __FISH_H__
 
-# pragma once
+#ifndef __FISH_H__
+#define __FISH_H__
 
 // Engine includes
 #include "Object.h"
@@ -31,3 +32,4 @@ namespace df
 		void moveShadow();
 	};
 }
+#endif // __FISH_H__

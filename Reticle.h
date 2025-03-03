@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __RETICLE_H__
+#define __RETICLE_H_
 
 #include "Object.h"
 #include "Lure.h"
@@ -19,3 +20,4 @@ namespace df
 			int eventHandler(const df::Event *p_e) override;
 	};
 }
+#endif // __RETICLE_H__

@@ -1,7 +1,14 @@
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\vc143.pdb
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\vc143.idb
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\object.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\music.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\manager.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\logmanager.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\inputmanager.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\hero.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\gamemanager.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\game.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\frame.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\eventview.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\eventstep.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\eventout.obj
@@ -9,13 +16,29 @@ c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb6
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\eventkeyboard.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\eventcollision.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\event.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\displaymanager.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\clock.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\box.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\animation.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\worldmanager.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\viewobject.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\vector.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\utility.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\star.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\sprite.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\sound.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\saucer.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\reticle.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\resourcemanager.obj
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\objectlist.obj
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\x64\debug\unlimited bananas-proj3.exe
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\x64\debug\unlimited bananas-proj3.pdb
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimited bananas-proj3.ilk
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\cl.command.1.tlog
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\cl.items.tlog
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\cl.read.1.tlog
 c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\cl.write.1.tlog
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\link.command.1.tlog
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\link.read.1.tlog
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\link.secondary.1.tlog
+c:\users\smith\onedrive\documents\github\unlimited-bananas-proj3\unlimite.af3bb651\x64\debug\unlimite.af3bb651.tlog\link.write.1.tlog

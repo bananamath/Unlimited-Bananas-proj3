@@ -1,4 +1,5 @@
-#pragma once
+#ifndef __WORLD_MANAGER_H__
+#define __WORLD_MANAGER_H__
 
 #include "Manager.h"
 #include "ObjectList.h"
@@ -90,3 +91,4 @@ namespace df
 			int setViewFollowing(Object *p_new_view_following);
 	};
 }
+#endif //__WORLD_MANAGER_H__

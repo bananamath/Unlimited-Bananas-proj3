@@ -118,6 +118,7 @@ int WorldManager::markForDelete(Object* p_o)
     // Object not in list, so add.
     m_deletions.insert(p_o);
     LM.writeLog("WorldManager: Marked object for deletion.");
+    return 0;
 }
 
 void WorldManager::draw()
@@ -255,7 +256,7 @@ Box WorldManager::getView() const
 void WorldManager::setViewPosition(Vector view_pos)
 {
     // Make sure horizontal not out of world boundary.
-    int x = view_pos.getX() - view.getHorizontal()/2;
+    float x = view_pos.getX() - view.getHorizontal()/2;
     if (x + view.getHorizontal() > boundary.getHorizontal())
     {
         x = boundary.getHorizontal() - view.getHorizontal();
@@ -266,7 +267,7 @@ void WorldManager::setViewPosition(Vector view_pos)
     }
 
     // Make sure vertical not out of world boundary.
-    int y = view_pos.getY() - view.getVertical()/2;
+    float y = view_pos.getY() - view.getVertical()/2;
     if (y + view.getVertical() > boundary.getVertical())
     {
         y = boundary.getVertical() - view.getVertical();

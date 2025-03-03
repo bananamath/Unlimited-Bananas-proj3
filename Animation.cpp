@@ -100,11 +100,11 @@ Box Animation::getBox() const
     // If no Sprite, return unit Box cenetered at (0,0).
     if (m_p_sprite == NULL)
     {
-        Box box(Vector(-0.5,-0.5), 1, 1);
+        Box box(Vector(-0.5f,-0.5f), 1, 1);
         return box;
     }
 
-    Vector corner(-1 * m_p_sprite -> getWidth()/2.0, -1 * m_p_sprite -> getHeight()/2.0);
+    Vector corner(-1 * m_p_sprite -> getWidth()/2.0f, -1 * m_p_sprite -> getHeight()/2.0f);
     Box box(corner, m_p_sprite -> getWidth(), m_p_sprite -> getHeight());
 
     return box;
