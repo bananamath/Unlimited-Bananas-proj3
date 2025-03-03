@@ -178,6 +178,7 @@
     <ClInclude Include="Star.h" />
     <ClInclude Include="utility.h" />
     <ClInclude Include="Vector.h" />
+    <ClInclude Include="ViewCaught.h" />
     <ClInclude Include="ViewObject.h" />
     <ClInclude Include="WorldManager.h" />
   </ItemGroup>
@@ -213,6 +214,7 @@
     <ClCompile Include="Star.cpp" />
     <ClCompile Include="utility.cpp" />
     <ClCompile Include="Vector.cpp" />
+    <ClCompile Include="ViewCaught.cpp" />
     <ClCompile Include="ViewObject.cpp" />
     <ClCompile Include="WorldManager.cpp" />
   </ItemGroup>

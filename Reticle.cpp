@@ -34,12 +34,16 @@ int Reticle::eventHandler(const Event *p_e)
 
 		if (sprite == "reticle")
 		{
-			setPosition(Vector(m_position.getX(), getPosition().getY()));
+			// If we want fixed vertical position
+			setPosition(Vector(m_position.getX(), 20));
+
+
+			/*setPosition(Vector(m_position.getX(), getPosition().getY()));
 
 			if (m_position.getY() > 18)
 			{
 				setPosition(Vector(getPosition().getX(), m_position.getY()));
-			}
+			}*/
 		}
 		
 		if (p_mouse_event -> getMouseAction() == CLICKED)

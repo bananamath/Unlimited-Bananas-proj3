@@ -5,6 +5,7 @@
 
 // Engine includes
 #include "Object.h"
+#include "Sprite.h"
 #include "EventCollision.h"
 
 namespace df
@@ -13,16 +14,19 @@ namespace df
 	{
 	private:
 		std::string m_name;
-		//size range
-		//sprite - i think we need derived objects of this derived object
-		// there's prob several decent ways we could implement different Fish types
-		//name
-		//speed and/or movement pattern
-		//rarity
+		Sprite m_sprite;
+		int m_size;
+		int m_rarity;
+
 		int move_cooldown;
 
 	public:
+		// Default Fish constructor
 		Fish();
+
+		// Fish constructor with parameters given
+		Fish(Sprite sprite, std::string name, int size, int rarity);
+
 		~Fish();
 		int eventHandler(const Event* p_e) override;
 		
@@ -30,6 +34,19 @@ namespace df
 		void hit(const EventCollision* p_collision_event);
 		void moveToStart();
 		void moveShadow();
+
+		// Getters and Setters
+		std::string getFishName() const;
+		void setFishName(std::string name);
+
+		Sprite getFishSprite() const;
+		void setFishSprite(Sprite sprite);
+
+		int getFishSize() const;
+		void setFishSize(int size);
+
+		int getFishRarity() const;
+		void setFishRarity(int rarity);
 	};
 }
 #endif // __FISH_H__

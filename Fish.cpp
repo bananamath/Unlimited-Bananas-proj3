@@ -7,6 +7,7 @@
 #include "WorldManager.h"
 #include "EventStep.h"
 
+
 // Game includes
 #include "Fish.h"
 
@@ -14,9 +15,26 @@ using namespace df;
 
 Fish::Fish()
 {
+	m_sprite = NULL;
+	setType("Fish");
+
 	setSprite("shadow");
 
+	setSolidness(SOFT);
+
+	move_cooldown = 0;
+	moveToStart();
+}
+
+Fish::Fish(Sprite sprite, std::string name, int size, int rarity)
+{
 	setType("Fish");
+
+	setSprite("shadow");
+	setFishSprite(sprite);
+	setFishName(name);
+	setFishSize(size);
+	setFishRarity(rarity);
 
 	setSolidness(SOFT);
 
@@ -98,8 +116,7 @@ void Fish::moveToStart()
 	temp_pos.setX(-6.0f);
 
 	// y is in vertical range.
-	//temp_pos.setY(14.0f);
-	temp_pos.setY((rand() % 4) + 14.0f);
+	temp_pos.setY((rand() % 4) + 12.0f);
 
 	// If collision, move left slightly until empty space.
 	ObjectList collision_list = WM.getCollisions(this, temp_pos);
@@ -145,4 +162,36 @@ void Fish::moveShadow()
 		move_cooldown--;
 		setVelocity(Vector(0,0));
 	}
+}
+
+// Getters and Setters
+std::string Fish::getFishName() const {
+	return m_name;
+}
+void Fish::setFishName(std::string name) {
+	m_name = name;
+	return;
+}
+
+Sprite Fish::getFishSprite() const {
+	return m_sprite;
+}
+void Fish::setFishSprite(Sprite sprite) {
+	m_sprite = sprite;
+}
+
+int Fish::getFishSize() const {
+	return m_size;
+}
+void Fish::setFishSize(int size) {
+	m_size = size;
+	return;
+}
+
+int Fish::getFishRarity() const {
+	return m_rarity;
+}
+void Fish::setFishRarity(int rarity) {
+	m_rarity = rarity;
+	return;
 }

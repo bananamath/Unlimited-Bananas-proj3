@@ -1,2 +1,40 @@
-﻿  Fish.cpp
-  Unlimited Bananas-proj3.vcxproj -> C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\x64\Debug\Unlimited Bananas-proj3.exe
+﻿  Animation.cpp
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(108,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(108,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  DisplayManager.cpp
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(19,31): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(24,33): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(106,42): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(110,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  EventCollision.cpp
+  Fish.cpp
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Fish.cpp(17,1): error C2248: 'df::Sprite::Sprite': cannot access private member declared in class 'df::Sprite'
+      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(20,4):
+      see declaration of 'df::Sprite::Sprite'
+      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(9,8):
+      see declaration of 'df::Sprite'
+  
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Fish.cpp(29,1): error C2248: 'df::Sprite::Sprite': cannot access private member declared in class 'df::Sprite'
+      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(20,4):
+      see declaration of 'df::Sprite::Sprite'
+      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(9,8):
+      see declaration of 'df::Sprite'
+  
+  GameManager.cpp
+  Hero.cpp
+  Lure.cpp
+  Manager.cpp
+  Object.cpp
+  ObjectList.cpp
+  ResourceManager.cpp
+  Reticle.cpp
+  Saucer.cpp
+  Sprite.cpp
+  Star.cpp
+  ViewCaught.cpp
+  ViewObject.cpp
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\ViewObject.cpp(45,37): warning C4244: 'argument': conversion from 'unsigned __int64' to 'float', possible loss of data
+  WorldManager.cpp
+  game.cpp
+  utility.cpp
+  Generating Code...

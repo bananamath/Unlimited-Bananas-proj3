@@ -17,3 +17,38 @@
 [0] WorldManager: Inserted object.
 [0] WorldManager: Inserted object.
 [0] WorldManager: Inserted object.
+[49] Cast strength: 3
+[49] WorldManager: Inserted object.
+[49] Lure target y: 14.000000
+[131] WorldManager: Marked object for deletion.
+[131] WorldManager: Deleted object.
+[131] WorldManager: Removed object.
+[155] Cast strength: 2
+[155] WorldManager: Inserted object.
+[155] Lure target y: 16.000000
+[166] WorldManager: Found colliding object of type Lure
+[166] Fish::hit() - There's a bite!
+[177] WorldManager: Found colliding object of type Lure
+[177] Fish::hit() - There's a bite!
+[188] WorldManager: Found colliding object of type Lure
+[188] Fish::hit() - There's a bite!
+[199] WorldManager: Found colliding object of type Lure
+[199] Fish::hit() - There's a bite!
+[207] WorldManager: Marked object for deletion.
+[207] WorldManager: Deleted object.
+[207] WorldManager: Removed object.
+[237] Cast strength: 3
+[237] WorldManager: Inserted object.
+[237] Lure target y: 14.000000
+[265] WorldManager: Found colliding object of type Lure
+[265] Fish::hit() - There's a bite!
+[287] WorldManager: Found colliding object of type Lure
+[287] Fish::hit() - There's a bite!
+[298] WorldManager: Found colliding object of type Lure
+[298] Fish::hit() - There's a bite!
+[309] WorldManager: Found colliding object of type Lure
+[309] Fish::hit() - There's a bite!
+[738] WorldManager: Found colliding object of type Lure
+[738] Fish::hit() - There's a bite!
+[749] WorldManager: Found colliding object of type Lure
+[749] Fish::hit() - There's a bite!
