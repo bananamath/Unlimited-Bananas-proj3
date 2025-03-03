@@ -1,4 +1,2 @@
-﻿  WorldManager.cpp
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(121,1): warning C4715: 'df::WorldManager::markForDelete': not all control paths return a value
-Reticle.obj : error LNK2019: unresolved external symbol "public: __cdecl df::Lure::Lure(class Vector,int)" (??0Lure@df@@QEAA@VVector@@H@Z) referenced in function "public: virtual int __cdecl df::Reticle::eventHandler(class df::Event const *)" (?eventHandler@Reticle@df@@UEAAHPEBVEvent@2@@Z)
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\x64\Debug\Unlimited Bananas-proj3.exe : fatal error LNK1120: 1 unresolved externals
+﻿  Fish.cpp
+  Unlimited Bananas-proj3.vcxproj -> C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\x64\Debug\Unlimited Bananas-proj3.exe

@@ -95,10 +95,10 @@ void Fish::moveToStart()
 	int world_vert = (int)WM.getBoundary().getVertical();
 
 	// x is off left side of window.
-	temp_pos.setX(13.0f);
+	temp_pos.setX(8.0f);
 
 	// y is in vertical range.
-	temp_pos.setY(18.0f);
+	temp_pos.setY(14.0f);
 	//temp_pos.setY(rand() % (int)(world_vert - 4) + 4.0f);
 
 	// If collision, move left slightly until empty space.
@@ -124,19 +124,19 @@ void Fish::moveShadow()
 		switch (random_dir)
 		{
 			case 0:
-				setVelocity(Vector(1,0));
+				setVelocity(Vector(4,0));
 				break;
 
 			case 1:
-				setVelocity(Vector(-1,0));
+				setVelocity(Vector(0,0));
 				break;
 
 			case 2:
-				setVelocity(Vector(0,1));
+				setVelocity(Vector(2,1));
 				break;
 
 			case 3:
-				setVelocity(Vector(0,-1));
+				setVelocity(Vector(2,-1));
 				break;
 		}
 	}

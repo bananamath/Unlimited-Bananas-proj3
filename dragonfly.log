@@ -4,3 +4,33 @@
 [0] InputManager started
 [0] ResourceManager started
 [0] GameManager started
+[0] ResourceManager: Loading 'background' from file 'sprites/ff-spr-background.txt'.
+[0] ResourceManager: Loaded sprite 'background'.
+[0] ResourceManager: Loading 'castbar' from file 'sprites/ff-spr-castbar.txt'.
+[0] ResourceManager: Loaded sprite 'castbar'.
+[0] ResourceManager: Loading 'lure' from file 'sprites/ff-spr-lure.txt'.
+[0] ResourceManager: Loaded sprite 'lure'.
+[0] ResourceManager: Loading 'guppy' from file 'sprites/ff-spr-guppy.txt'.
+[0] ResourceManager: Loaded sprite 'guppy'.
+[0] WorldManager: Inserted object.
+[0] WorldManager: Inserted object.
+[0] WorldManager: Inserted object.
+[78] Cast strength: 4
+[78] WorldManager: Inserted object.
+[78] Lure target y: 12.000000
+[174] WorldManager: Marked object for deletion.
+[174] WorldManager: Deleted object.
+[174] WorldManager: Removed object.
+[194] Cast strength: 1
+[194] WorldManager: Inserted object.
+[194] Lure target y: 18.000000
+[199] WorldManager: Found colliding object of type Lure
+[199] Fish::hit() - There's a bite!
+[210] WorldManager: Found colliding object of type Lure
+[210] Fish::hit() - There's a bite!
+[243] WorldManager: Found colliding object of type Lure
+[243] Fish::hit() - There's a bite!
+[254] WorldManager: Found colliding object of type Lure
+[254] Fish::hit() - There's a bite!
+[265] WorldManager: Found colliding object of type Lure
+[265] Fish::hit() - There's a bite!

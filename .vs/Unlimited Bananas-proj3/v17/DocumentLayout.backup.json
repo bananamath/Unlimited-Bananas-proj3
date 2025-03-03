@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Fish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Fish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\USERS\\SMITH\\ONEDRIVE\\DOCUMENTS\\GITHUB\\UNLIMITED-BANANAS-PROJ3\\LURE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:LURE.H||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Lure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Lure.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Reticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\WorldManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:WorldManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\WorldManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:WorldManager.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
@@ -13,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Reticle.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Reticle.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Object.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -31,16 +51,8 @@
       "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Animation.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Fish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Fish.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Box.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:Box.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{AF3BB651-1A4B-4E8F-A548-F099988B8777}|Unlimited Bananas-proj3.vcxproj|solutionrelative:game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,11 +62,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "Fish.h",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Fish.h",
               "RelativeDocumentMoniker": "Fish.h",
@@ -68,20 +80,60 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 0,
               "Title": "Fish.cpp",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Fish.cpp",
               "RelativeDocumentMoniker": "Fish.cpp",
               "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Fish.cpp",
               "RelativeToolTip": "Fish.cpp",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEgAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAAAI0AAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-02T15:39:35.258Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Lure.h",
+              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Lure.h",
+              "RelativeDocumentMoniker": "Lure.h",
+              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Lure.h",
+              "RelativeToolTip": "Lure.h",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAYwBUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-03-03T14:33:58.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Lure.cpp",
+              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Lure.cpp",
+              "RelativeDocumentMoniker": "Lure.cpp",
+              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Lure.cpp",
+              "RelativeToolTip": "Lure.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-03T14:33:52.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WorldManager.cpp",
+              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\WorldManager.cpp",
+              "RelativeDocumentMoniker": "WorldManager.cpp",
+              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\WorldManager.cpp",
+              "RelativeToolTip": "WorldManager.cpp",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAowHgAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-03T14:28:22.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "WorldManager.h",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\WorldManager.h",
               "RelativeDocumentMoniker": "WorldManager.h",
@@ -94,7 +146,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
+              "Title": "Reticle.cpp",
+              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.cpp",
+              "RelativeDocumentMoniker": "Reticle.cpp",
+              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.cpp",
+              "RelativeToolTip": "Reticle.cpp",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-03-03T14:16:32.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "game.cpp",
+              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\game.cpp",
+              "RelativeDocumentMoniker": "game.cpp",
+              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\game.cpp",
+              "RelativeToolTip": "game.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-28T18:59:14.112Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "DisplayManager.cpp",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\DisplayManager.cpp",
               "RelativeDocumentMoniker": "DisplayManager.cpp",
@@ -107,7 +185,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Animation.cpp",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Animation.cpp",
               "RelativeDocumentMoniker": "Animation.cpp",
@@ -120,20 +198,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Reticle.cpp",
-              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.cpp",
-              "RelativeDocumentMoniker": "Reticle.cpp",
-              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.cpp",
-              "RelativeToolTip": "Reticle.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-03-03T14:16:32.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "Reticle.h",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Reticle.h",
               "RelativeDocumentMoniker": "Reticle.h",
@@ -146,7 +211,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "Object.h",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Object.h",
               "RelativeDocumentMoniker": "Object.h",
@@ -159,7 +224,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Box.cpp",
               "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\Box.cpp",
               "RelativeDocumentMoniker": "Box.cpp",
@@ -168,18 +233,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-02T15:30:10.708Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "game.cpp",
-              "DocumentMoniker": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\game.cpp",
-              "RelativeDocumentMoniker": "game.cpp",
-              "ToolTip": "C:\\Users\\smith\\OneDrive\\Documents\\GitHub\\Unlimited-Bananas-proj3\\game.cpp",
-              "RelativeToolTip": "game.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAJADAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-02-28T18:59:14.112Z"
             }
           ]
         }

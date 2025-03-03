@@ -165,6 +165,7 @@
     <ClInclude Include="Hero.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="LogManager.h" />
+    <ClInclude Include="Lure.h" />
     <ClInclude Include="Manager.h" />
     <ClInclude Include="Music.h" />
     <ClInclude Include="Object.h" />
@@ -199,6 +200,7 @@
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="LogManager.cpp" />
+    <ClCompile Include="Lure.cpp" />
     <ClCompile Include="Manager.cpp" />
     <ClCompile Include="Music.cpp" />
     <ClCompile Include="Object.cpp" />
