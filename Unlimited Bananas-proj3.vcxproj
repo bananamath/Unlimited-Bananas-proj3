@@ -71,18 +71,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -91,6 +91,7 @@
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,6 +122,7 @@
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <DisableSpecificWarnings>4275;%(DisableSpecificWarnings)</DisableSpecificWarnings>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -157,6 +159,7 @@
     <ClInclude Include="EventOut.h" />
     <ClInclude Include="EventStep.h" />
     <ClInclude Include="EventView.h" />
+    <ClInclude Include="Fish.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="GameManager.h" />
     <ClInclude Include="Hero.h" />
@@ -189,6 +192,7 @@
     <ClCompile Include="EventOut.cpp" />
     <ClCompile Include="EventStep.cpp" />
     <ClCompile Include="EventView.cpp" />
+    <ClCompile Include="Fish.cpp" />
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="GameManager.cpp" />

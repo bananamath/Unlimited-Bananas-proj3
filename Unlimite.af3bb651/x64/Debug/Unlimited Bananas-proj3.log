@@ -1,22 +1,15 @@
 ﻿  Animation.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Animation.cpp(107,84): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Animation.cpp(107,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Animation.cpp(108,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Animation.cpp(108,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(107,84): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(107,48): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(108,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(108,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Box.cpp
   Clock.cpp
   DisplayManager.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'DisplayManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(19,31): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(24,33): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(106,42): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(110,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(19,31): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(24,33): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(106,42): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(110,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
   Event.cpp
   EventCollision.cpp
   EventKeyboard.cpp
@@ -25,142 +18,44 @@ C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Dis
   EventStep.cpp
   EventView.cpp
   Frame.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Frame.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   game.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'game.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   GameManager.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'GameManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Hero.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Hero.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   InputManager.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'InputManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         with
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         [
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:             T=int
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         ]
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         with
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         [
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:             T=int
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         ]
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         with
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         [
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:             T=int
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         ]
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         with
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         [
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:             T=int
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         ]
   LogManager.cpp
   Manager.cpp
   Music.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Music.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Object.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Object.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Generating Code...
   Compiling...
   ObjectList.cpp
   ResourceManager.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'ResourceManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Reticle.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Reticle.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Saucer.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Saucer.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Sound.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Sound.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   Sprite.cpp
   Star.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'Star.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
   utility.cpp
   Vector.cpp
   ViewObject.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'ViewObject.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\ViewObject.cpp(45,37): warning C4244: 'argument': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\ViewObject.cpp(45,37): warning C4244: 'argument': conversion from 'unsigned __int64' to 'float', possible loss of data
   WorldManager.cpp
-C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,47): warning C4275: non dll-interface class 'std::runtime_error' used as base for dll-interface class 'sf::Exception'
-  (compiling source file 'WorldManager.cpp')
-      C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.41.34120\include\stdexcept(100,19):
-      see declaration of 'std::runtime_error'
-      C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\include\SFML\System\Exception.hpp(41,23):
-      see declaration of 'sf::Exception'
-  
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(258,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(261,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(269,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(272,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(280,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(280,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(258,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(261,38): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(269,11): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(272,36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(280,25): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(280,23): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
   Generating Code...
-C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\WorldManager.cpp(121,1): warning C4715: 'df::WorldManager::markForDelete': not all control paths return a value
-  Unlimited Bananas-proj3.vcxproj -> C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\x64\Debug\Unlimited Bananas-proj3.exe
+C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\WorldManager.cpp(121,1): warning C4715: 'df::WorldManager::markForDelete': not all control paths return a value
+  Unlimited Bananas-proj3.vcxproj -> C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\x64\Debug\Unlimited Bananas-proj3.exe

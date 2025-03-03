@@ -1,6 +1,7 @@
 #include "DisplayManager.h"
 #include "WorldManager.h"
 #include "EventMouse.h"
+#include "LogManager.h"
 
 #include "Reticle.h"
 
@@ -11,11 +12,16 @@ Reticle::Reticle()
 {
 	setType("Reticle");
 
-	setSolidness(df::Solidness::SPECTRAL);
+	setSolidness(Solidness::SPECTRAL);
 
 	setAltitude(MAX_ALTITUDE); // Make Reticle in foreground.
 
-	color = "RED";
+	setPosition(Vector(40,20));
+
+	sprite = "reticle";
+	setSprite("castbar");
+	
+	lure = NULL;
 }
 
 int Reticle::eventHandler(const Event *p_e)
@@ -24,18 +30,45 @@ int Reticle::eventHandler(const Event *p_e)
 	{
 		const EventMouse *p_mouse_event = dynamic_cast <const EventMouse *> (p_e);
 		// Change location to new mouse position.
-		setPosition(p_mouse_event -> getMousePosition());
+		Vector m_position = p_mouse_event -> getMousePosition();
+
+		if (sprite == "reticle")
+		{
+			setPosition(Vector(m_position.getX(), getPosition().getY()));
+
+			if (m_position.getY() > 18)
+			{
+				setPosition(Vector(getPosition().getX(), m_position.getY()));
+			}
+		}
 		
 		if (p_mouse_event -> getMouseAction() == CLICKED)
 		{
-			if (p_mouse_event -> getMouseButton() == LEFT)
+			if (lure == NULL)
 			{
-				color = "MAGENTA";
-			}
+				if (sprite == "reticle")
+				{
+					sprite = "castbar";
+					getAnimation().setIndex(0);
+				}
+				else if (sprite == "castbar")
+				{
+					sprite = "reticle";
+					int strength = getAnimation().getIndex();
+					// Adjust strength if the cast bar is on a decreasing frame.
+					if (strength > 4)
+					{
+						strength = 8-strength;
+					}
+					LM.writeLog("Cast strength: %d", strength);
 
-			if (p_mouse_event -> getMouseButton() == RIGHT)
+					lure = new Lure(getPosition(), strength);
+				}
+			}
+			else
 			{
-				color = "RED";
+				WM.markForDelete(lure);
+				lure = NULL;
 			}
 		}
 
@@ -48,14 +81,13 @@ int Reticle::eventHandler(const Event *p_e)
 // Draw reticle on window.
 int Reticle::draw()
 {
-	if (color == "RED")
+	if (sprite == "reticle")
 	{
 		DM.drawCh(getPosition(), RETICLE_CHAR, RED);
 	}
-
-	if (color == "MAGENTA")
+	else if (sprite == "castbar")
 	{
-		DM.drawCh(getPosition(), RETICLE_CHAR, MAGENTA);
+		getAnimation().draw(Vector(getPosition().getX(), getPosition().getY()-2));
 	}
 
 	return 0;

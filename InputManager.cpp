@@ -1048,7 +1048,7 @@ void InputManager::getInput(bool output) const
         // Mouse clicked?
         if (p_event -> getIf<sf::Event::MouseButtonPressed>())
         {
-            // Setup as MouseMoved event.
+            // Setup as MouseButtonPressed event.
             sf::Event::MouseButtonPressed *p_mse_event = reinterpret_cast<sf::Event::MouseButtonPressed *> (&e);
 
             // Get pixel location.
@@ -1056,6 +1056,7 @@ void InputManager::getInput(bool output) const
 
             EventMouse eventMouse;
             eventMouse.setMouseAction(CLICKED);
+            eventMouse.setMousePosition(DM.pixelsToSpaces(Vector (pixel_pos.x, pixel_pos.y)));
 
             if (p_mse_event -> button == sf::Mouse::Button::Left)
             {

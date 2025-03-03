@@ -23,10 +23,46 @@
 #include "Saucer.h"
 #include "Star.h"
 #include "Hero.h"
+#include "Fish.h"
 
 using namespace df;
 
 void runAllTests();
+
+int main(int argc, char *argv[])
+{
+	// GameManager startup.
+	GM.startUp();
+
+	LM.setFlush(true);
+
+	RM.loadSprite("sprites/ff-spr-background.txt", "background");
+	RM.loadSprite("sprites/ff-spr-castbar.txt", "castbar");
+	RM.loadSprite("sprites/ff-spr-lure.txt", "lure");
+	RM.loadSprite("sprites/ff-spr-guppy.txt", "guppy");
+
+	// Set world boundaries to 80 horizontal, 24 vertical.
+	WM.setBoundary(Box(Vector(0,0),80,24));
+
+	// Set view to 80 horizontal, 24 vertical.
+	WM.setView(Box(Vector(0,0),80,24));
+
+	Object* background = new Object();
+	background -> setSolidness(SPECTRAL);
+	background -> setAltitude(0);
+	background -> setSprite("background");
+	background -> setPosition(Vector(40,12));
+
+	new Reticle();
+	new Fish();
+
+	// Game loop test.
+	GM.run();
+
+	// GameManager shutdown.
+	GM.shutDown();
+}
+
 bool testLogManagerOutput();
 bool testClockTiming();
 bool testVectorObject();
@@ -44,101 +80,6 @@ bool testBox();
 bool testViews();
 bool testAudio();
 bool testToString();
-
-int main(int argc, char *argv[])
-{
-	// GameManager startup.
-	GM.startUp();
-
-	/*
-	runAllTests();
-
-	RM.loadSprite("sprites/saucer-spr.txt", "saucer");
-
-	// Tests step event handling.
-	new Saucer();
-	new Saucer();
-	new Saucer();
-
-	// Tests altitude.
-	new Star();
-	(new Saucer()) -> setPosition(Vector (10,10));
-	(new Star()) -> setPosition(Vector (10,10));
-
-	// Tests keyboard and mouse input.
-	new Hero();
-
-	// Tests velocity.
-	Star* star = new Star();
-	star -> setPosition(Vector (30,10));
-	star -> setVelocity(Vector (1,0));
-
-	Star* star2 = new Star();
-	star2 -> setPosition(Vector (30,10));
-	star2 -> setVelocity(Vector (0,2));
-
-	Star* star3 = new Star();
-	star3 -> setPosition(Vector (30,10));
-	star3 -> setVelocity(Vector (-0.2,-0.1));
-
-	// Tests collision.
-	Saucer* saucer = new Saucer();
-	saucer -> setPosition(Vector (40,2));
-	saucer -> setVelocity(Vector (0.1,0));
-
-	Saucer* saucer2 = new Saucer();
-	saucer2 -> setPosition(Vector (60,2));
-	saucer2 -> setVelocity(Vector (-0.1,0));
-
-	Saucer* saucer3 = new Saucer();
-	saucer3 -> setPosition(Vector (40,4));
-	saucer3 -> setVelocity(Vector (0.2,0));
-	saucer3 -> setSolidness(SOFT);
-
-	Saucer* saucer4 = new Saucer();
-	saucer4 -> setPosition(Vector (60,4));
-	saucer4 -> setVelocity(Vector (-0.2,0));
-	saucer4 -> setSolidness(SOFT);
-
-	Saucer* saucer5 = new Saucer();
-	saucer5 -> setPosition(Vector (40,6));
-	saucer5 -> setVelocity(Vector (0.3,0));
-
-	Saucer* saucer6 = new Saucer();
-	saucer6 -> setPosition(Vector (60,6));
-	saucer6 -> setVelocity(Vector (-0.3,0));
-	saucer6 -> setSolidness(SPECTRAL);
-
-	// Set world boundaries to 80 horizontal, 50 vertical.
-	Vector corner(0,0);
-	Box world_boundary(corner,80,50);
-	WM.setBoundary(world_boundary);
-
-	// Set view to 80 horizontal, 24 vertical.
-	Box view(corner,80,24);
-	WM.setView(view);
-
-	// ViewObject tests.
-	ViewObject* view_obj = new ViewObject();
-	view_obj -> setViewString("Movement");
-	view_obj -> setValue(2);
-
-	(new ViewObject()) -> setLocation(TOP_LEFT);
-	(new ViewObject()) -> setLocation(TOP_RIGHT);
-	(new ViewObject()) -> setLocation(CENTER_LEFT);
-	(new ViewObject()) -> setLocation(CENTER_CENTER);
-	(new ViewObject()) -> setLocation(CENTER_RIGHT);
-	(new ViewObject()) -> setLocation(BOTTOM_LEFT);
-	(new ViewObject()) -> setLocation(BOTTOM_CENTER);
-	(new ViewObject()) -> setLocation(BOTTOM_RIGHT);
-	*/
-
-	// Game loop test.
-	GM.run();
-
-	// GameManager shutdown.
-	GM.shutDown();
-}
 
 void runAllTests()
 {
