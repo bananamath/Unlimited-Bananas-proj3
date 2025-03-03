@@ -95,11 +95,11 @@ void Fish::moveToStart()
 	int world_vert = (int)WM.getBoundary().getVertical();
 
 	// x is off left side of window.
-	temp_pos.setX(8.0f);
+	temp_pos.setX(-4.0f);
 
 	// y is in vertical range.
-	temp_pos.setY(14.0f);
-	//temp_pos.setY(rand() % (int)(world_vert - 4) + 4.0f);
+	//temp_pos.setY(14.0f);
+	temp_pos.setY((rand() % 4) + 14.0f);
 
 	// If collision, move left slightly until empty space.
 	ObjectList collision_list = WM.getCollisions(this, temp_pos);
