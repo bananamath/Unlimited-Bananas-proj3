@@ -1,40 +1,73 @@
 ﻿  Animation.cpp
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(108,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Animation.cpp(108,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Animation.cpp(108,70): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\Animation.cpp(108,43): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+  Box.cpp
+  Clock.cpp
   DisplayManager.cpp
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(19,31): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(24,33): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(106,42): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\DisplayManager.cpp(110,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(19,31): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(24,33): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(106,42): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\DisplayManager.cpp(110,43): warning C4244: 'argument': conversion from 'float' to 'unsigned int', possible loss of data
+  Event.cpp
   EventCollision.cpp
+  EventKeyboard.cpp
+  EventMouse.cpp
+  EventOut.cpp
+  EventStep.cpp
+  EventView.cpp
   Fish.cpp
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Fish.cpp(17,1): error C2248: 'df::Sprite::Sprite': cannot access private member declared in class 'df::Sprite'
-      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(20,4):
-      see declaration of 'df::Sprite::Sprite'
-      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(9,8):
-      see declaration of 'df::Sprite'
-  
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Fish.cpp(29,1): error C2248: 'df::Sprite::Sprite': cannot access private member declared in class 'df::Sprite'
-      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(20,4):
-      see declaration of 'df::Sprite::Sprite'
-      C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\Sprite.h(9,8):
-      see declaration of 'df::Sprite'
-  
+  Frame.cpp
+  game.cpp
   GameManager.cpp
   Hero.cpp
+/Hero.cpp(1,1): error C1083: Cannot open source file: 'Hero.cpp': No such file or directory
+  (compiling source file '/Hero.cpp')
+  
+  InputManager.cpp
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         with
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         [
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:             T=int
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,89): warning C4244:         ]
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         with
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         [
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:             T=int
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1039,76): warning C4244:         ]
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,89): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,89): warning C4244:         with
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,89): warning C4244:         [
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,89): warning C4244:             T=int
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,89): warning C4244:         ]
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,76): warning C4244: 'argument': conversion from 'T' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,76): warning C4244:         with
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,76): warning C4244:         [
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,76): warning C4244:             T=int
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\InputManager.cpp(1059,76): warning C4244:         ]
+  LogManager.cpp
   Lure.cpp
   Manager.cpp
+  Generating Code...
+  Compiling...
+  Music.cpp
   Object.cpp
   ObjectList.cpp
   ResourceManager.cpp
   Reticle.cpp
   Saucer.cpp
+/Saucer.cpp(1,1): error C1083: Cannot open source file: 'Saucer.cpp': No such file or directory
+  (compiling source file '/Saucer.cpp')
+  
+  Sound.cpp
   Sprite.cpp
   Star.cpp
+/Star.cpp(1,1): error C1083: Cannot open source file: 'Star.cpp': No such file or directory
+  (compiling source file '/Star.cpp')
+  
+  utility.cpp
+  Vector.cpp
   ViewCaught.cpp
   ViewObject.cpp
-C:\Users\smith\OneDrive\Documents\GitHub\Unlimited-Bananas-proj3\ViewObject.cpp(45,37): warning C4244: 'argument': conversion from 'unsigned __int64' to 'float', possible loss of data
+C:\Users\banan\Documents\Visual Studio 2022\Projects\Unlimited-Bananas-proj3\ViewObject.cpp(45,37): warning C4244: 'argument': conversion from 'unsigned __int64' to 'float', possible loss of data
   WorldManager.cpp
-  game.cpp
-  utility.cpp
   Generating Code...

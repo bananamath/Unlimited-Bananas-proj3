@@ -71,18 +71,20 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
