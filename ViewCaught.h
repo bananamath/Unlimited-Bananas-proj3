@@ -2,27 +2,26 @@
 
 #include <string>
 
-#include "ViewObject.h"
+#include "Object.h"
 #include "Fish.h"
 
 namespace df
 {
-	class ViewCaught : public ViewObject
+	class ViewCaught : public Object
 	{
-	private:
-		Fish m_fish;
+		private:
+			std::string m_name;
+			std::string m_sprite;
+			int m_size;				// length in inches
+			std::string m_rarity;
+			int m_lifetime;
 
-	public:
-		// Construct ViewCaught
-		ViewCaught();
+		public:
+			// Construct ViewCaught
+			ViewCaught(std::string name, std::string sprite, int size, std::string rarity);
 
-		// Draw view string and value.
-		virtual int draw();
+			int eventHandler(const df::Event *p_e) override;
 
-		// Set Fish data
-		void setFishData(Fish fish);
-
-		// Get Fish data
-		Fish getFishData() const;
+			int draw(void) override;
 	};
 }

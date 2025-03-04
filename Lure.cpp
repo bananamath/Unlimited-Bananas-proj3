@@ -16,7 +16,8 @@ Lure::Lure(Vector position, int strength)
 	setSprite("lure");
 
 	setPosition(position);
-    target_y = position.getY() - strength*2;
+	// The lure's final location is based on the strength it was cast with.
+    target_y = position.getY() - strength*3+1;
 	LM.writeLog("Lure target y: %f", target_y);
 }
 
@@ -32,6 +33,7 @@ int Lure::eventHandler(const Event* p_e)
 
 void Lure::step()
 {
+	// Move towards target position and upon arrival allow collisions.
 	if (getPosition().getY() >= target_y)
 	{
 		setPosition(Vector(getPosition().getX(), getPosition().getY()-1));
@@ -44,6 +46,7 @@ void Lure::step()
 
 int Lure::draw(void)
 {
+	// Change sprite before and after arrival to final destination.
 	if (getPosition().getY() >= target_y)
 	{
 		DM.drawCh(getPosition(), '|', BLUE);

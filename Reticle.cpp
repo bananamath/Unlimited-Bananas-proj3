@@ -48,16 +48,20 @@ int Reticle::eventHandler(const Event *p_e)
 		
 		if (p_mouse_event -> getMouseAction() == CLICKED)
 		{
+			// If there is no lure, cast one. Otherwise, delete the lure.
 			if (lure == NULL)
 			{
+				// If the player tries to cast, make the Reticle display the castbar.
 				if (sprite == "reticle")
 				{
 					sprite = "castbar";
 					getAnimation().setIndex(0);
 				}
+				// If the player casts, remove the castbar and create a Lure with varying strength.
 				else if (sprite == "castbar")
 				{
 					sprite = "reticle";
+					// Strength of cast depends when in the sprite animation the player clicked.
 					int strength = getAnimation().getIndex();
 					// Adjust strength if the cast bar is on a decreasing frame.
 					if (strength > 4)
@@ -85,6 +89,7 @@ int Reticle::eventHandler(const Event *p_e)
 // Draw reticle on window.
 int Reticle::draw()
 {
+	// Draws either the normal Reticle or the castbar sprite depending on the current player action.
 	if (sprite == "reticle")
 	{
 		DM.drawCh(getPosition(), RETICLE_CHAR, RED);

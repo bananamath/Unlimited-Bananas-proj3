@@ -18,7 +18,8 @@ namespace df
 		int m_size;				// length in inches
 		std::string m_rarity;
 		int m_speed;
-
+		int m_bite;
+		int m_bite_cooldown;
 		int move_cooldown;
 
 

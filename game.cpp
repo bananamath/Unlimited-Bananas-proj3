@@ -20,9 +20,7 @@
 #include "Sound.h"
 #include "ViewObject.h"
 
-#include "Saucer.h"
-#include "Star.h"
-#include "Hero.h"
+#include "Reticle.h"
 #include "Fish.h"
 
 using namespace df;
@@ -40,6 +38,9 @@ int main(int argc, char *argv[])
 	RM.loadSprite("sprites/ff-spr-castbar.txt", "castbar");
 	RM.loadSprite("sprites/ff-spr-lure.txt", "lure");
 	RM.loadSprite("sprites/ff-spr-guppy.txt", "guppy");
+	RM.loadSprite("sprites/ff-spr-boot.txt", "boot");
+	RM.loadSprite("sprites/ff-spr-ampersalmon.txt", "ampersalmon");
+	RM.loadSprite("sprites/ff-spr-guppy.txt", "eel"); // TODO: Make eel sprite
 	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
 
 	// Set world boundaries to 80 horizontal, 24 vertical.
@@ -56,6 +57,8 @@ int main(int argc, char *argv[])
 
 	new Reticle();
 	new Fish();
+	new Fish();
+	new Fish();
 
 	// Game loop test.
 	GM.run();
@@ -64,6 +67,7 @@ int main(int argc, char *argv[])
 	GM.shutDown();
 }
 
+/*
 bool testLogManagerOutput();
 bool testClockTiming();
 bool testVectorObject();
@@ -853,3 +857,4 @@ bool testToString()
 
 	return true;
 }
+*/

@@ -6,10 +6,11 @@
 #include "LogManager.h"
 #include "WorldManager.h"
 #include "EventStep.h"
-
+#include "EventMouse.h"
 
 // Game includes
 #include "Fish.h"
+#include "ViewCaught.h"
 
 using namespace df;
 
@@ -19,6 +20,8 @@ Fish::Fish()
 	m_sprite = "";
 	m_rarity = "";
 	m_size = 0;
+	m_bite = 0;
+	m_bite_cooldown = 0;
 	move_cooldown = 0;
 	setType("Fish");
 
@@ -64,7 +67,7 @@ Fish::Fish()
 
 		int minLength = 8;
 		int maxLength = 20;
-		int r = 1 / (rand() % 100);
+		int r = 1 / ((rand() % 100) + 1);
 		int sz = (r * maxLength) + minLength;
 		setFishSize(sz);
 	}
@@ -130,6 +133,24 @@ int Fish::eventHandler(const Event* p_e)
 		return 1;
 	}
 
+	if (p_e -> getType() == MSE_EVENT)
+	{
+		const EventMouse *p_mouse_event = dynamic_cast <const EventMouse *> (p_e);
+
+		// If actively biting, be caught if mouse is clicked.
+		if (m_bite > 0)
+		{
+			if (p_mouse_event -> getMouseAction() == CLICKED)
+			{
+				new ViewCaught(m_name, m_sprite, m_size, m_rarity);
+				WM.markForDelete(this);
+				new Fish();
+			}
+		}
+
+		return 1;
+	}
+
 	// If get here, have ignored this event.
 	return 0;
 }
@@ -141,8 +162,9 @@ void Fish::out()
 	if (getPosition().getX() < WM.getBoundary().getHorizontal())
 		return;
 
-	// Otherwise, move back to far left
-	moveToStart();
+	// Otherwise, spawn new fish.
+	WM.markForDelete(this);
+	new Fish();
 }
 
 // Called when Fish shadow collides
@@ -157,14 +179,14 @@ void Fish::hit(const EventCollision* p_collision_event)
 	if ((p_collision_event->getObject1()->getType() == "Lure") ||
 		(p_collision_event->getObject2()->getType() == "Lure")) {
 
-		// TODO: catch opportunity
+		// Catch opportunity
 		LM.writeLog("Fish::hit() - There's a bite!");
 		
-		// delete current fish
-		WM.markForDelete(this);
-
-		// create new fish
-		Fish();
+		// If not actively biting and haven't bitten anything recently, start biting.
+		if (m_bite == 0 && m_bite_cooldown == 0)
+		{
+			m_bite = 30;
+		}
 	}
 	
 	return;
@@ -184,7 +206,7 @@ void Fish::moveToStart()
 	temp_pos.setX(-6.0f);
 
 	// y is in vertical range.
-	temp_pos.setY((rand() % 4) + 12.0f);
+	temp_pos.setY((rand() % 12) + 9.0f);
 
 	// If collision, move left slightly until empty space.
 	ObjectList collision_list = WM.getCollisions(this, temp_pos);
@@ -203,8 +225,10 @@ void Fish::moveShadow()
 {
 	if (move_cooldown == 0)
 	{
-		move_cooldown = 10;
+		// The fish type determines the actions per second.
+		move_cooldown = m_speed;
 
+		// Select a random movement, generally towards the right.
 		int random_dir = rand() % 4;
 		switch (random_dir)
 		{
@@ -224,11 +248,31 @@ void Fish::moveShadow()
 				setVelocity(Vector(2,-1));
 				break;
 		}
+
+		// Keep fish in ocean bounds.
+		if (predictPosition().getY() < 9 || predictPosition().getY() > 20)
+		{
+			setVelocity(Vector(0,0));
+		}
 	}
 	else
 	{
+		// Prevent movement when move is on cooldown.
 		move_cooldown--;
 		setVelocity(Vector(0,0));
+	}
+
+	if (m_bite > 0)
+	{
+		// If biting, prevent biting again for 5 seconds.
+		m_bite--;
+		m_bite_cooldown = 150;
+		setVelocity(Vector(0,0));
+	}
+
+	if (m_bite_cooldown > 0)
+	{
+		m_bite_cooldown--;
 	}
 }
 

@@ -6,54 +6,59 @@
 #include "WorldManager.h"
 #include "ViewObject.h"
 #include "utility.h"
+#include "DisplayManager.h"
+#include "EventStep.h"
 
 using namespace df;
 
-ViewCaught::ViewCaught()
+ViewCaught::ViewCaught(std::string name, std::string sprite, int size, std::string rarity)
 {
     // Initialize Object attributes.
     setType("ViewCaught");
+    setSolidness(SPECTRAL);
+    setAltitude(MAX_ALTITUDE);
+    setPosition(Vector(40,12));
 
-    // Initialize ViewObject attributes.
-    //setFishData();
+    // Initialize ViewCaught attributes.
+    m_name = name;
+    setSprite(sprite);
+    m_size = size;
+    m_rarity = rarity;
+    m_lifetime = 90;
 }
 
-int ViewCaught::draw()
+int ViewCaught::eventHandler(const df::Event* p_e)
 {
+    if (p_e -> getType() == STEP_EVENT)
+    {
+        // Only lasts for 3 seconds.
+        m_lifetime--;
 
-    //draw a black rectangle for background
+        if (m_lifetime == 0)
+        {
+            WM.markForDelete(this);
+        }
 
-    //// Display view_string + value.
-    //std::string temp_str = "";
-    //if (m_border == true)
-    //{
-    //    temp_str = " " + getViewString() + " " + utility::toString(m_value) + " ";
-    //}
-    //else
-    //{
-    //    temp_str = getViewString() + " " + utility::toString(m_value);
-    //}
-
-    //// Draw centered at position.
-    //Vector pos = utility::viewToWorld(getPosition());
-    //DM.drawString(pos, temp_str, CENTER_JUSTIFIED, getColor());
-
-    //if (m_border == true)
-    //{
-    //    // Draw box around display.
-    //    Box box(pos, temp_str.length(), 1);
-    //}
+        return 1;
+    }
 
     return 0;
 }
 
-// Set Fish data
-void ViewCaught::setFishData(Fish fish) {
-    m_fish = fish;
-    return;
-}
+// Draw fish and associated information.
+int ViewCaught::draw()
+{
+    getAnimation().draw(getPosition());
 
-// Get Fish data
-Fish ViewCaught::getFishData() const {
-    return m_fish;
+    std::string grammar = "a ";
+
+    if (m_name == "Ampersalmon" || m_name == "Eel")
+    {
+        grammar = "an ";
+    }
+
+    std::string temp_str = "Caught " + grammar + m_name + " (" + m_rarity + ") of length " + utility::toString(m_size) + " inches!";
+    DM.drawString(Vector(40,18), temp_str,CENTER_JUSTIFIED, MAGENTA);
+
+    return 0;
 }
