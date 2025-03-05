@@ -35,6 +35,7 @@ int main(int argc, char *argv[])
 
 	LM.setFlush(true);
 
+	RM.loadSprite("sprites/ff-spr-gamestart.txt", "gamestart");
 	RM.loadSprite("sprites/ff-spr-background.txt", "background");
 	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
 	RM.loadSprite("sprites/ff-spr-castbar.txt", "castbar");
@@ -53,13 +54,15 @@ int main(int argc, char *argv[])
 	RM.loadSound("sounds/ff-bite.mp3", "bite");
 	RM.loadSound("sounds/ff-catch.mp3", "catch");
 
+	RM.loadMusic("sounds/ff-music.mp3", "music");
+
 	// Set world boundaries to 80 horizontal, 24 vertical.
 	WM.setBoundary(Box(Vector(0,0),80,24));
 
 	// Set view to 80 horizontal, 24 vertical.
 	WM.setView(Box(Vector(0,0),80,24));
 
-	Object* background = new Object();
+	/*Object* background = new Object();
 	background -> setSolidness(SPECTRAL);
 	background -> setAltitude(0);
 	background -> setSprite("background");
@@ -68,10 +71,9 @@ int main(int argc, char *argv[])
 	new Reticle();
 	new Fish();
 	new Fish();
-	new Fish();
+	new Fish();*/
 
-	// TODO: needs a sprite and background music
-	//new GameStart();
+	new GameStart();
 	
 	// Game loop test.
 	GM.run();

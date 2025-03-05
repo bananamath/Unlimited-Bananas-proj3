@@ -34,8 +34,12 @@ ViewCaught::ViewCaught(std::string name, std::string sprite, int size, std::stri
 
 ViewCaught::~ViewCaught()
 {
-    Reticle* reticle = dynamic_cast <Reticle*> (WM.objectsOfType("Reticle")[0]);
-    reticle -> setCast(true);
+    ObjectList list = WM.objectsOfType("Reticle");
+    if (list.isEmpty() == false)
+    {
+        Reticle* reticle = dynamic_cast <Reticle*> (list[0]);
+        reticle -> setCast(true);
+    }
 }
 
 int ViewCaught::eventHandler(const df::Event* p_e)

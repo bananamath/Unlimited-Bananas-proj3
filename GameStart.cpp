@@ -45,6 +45,12 @@ int GameStart::eventHandler(const Event *p_e)
 
 void GameStart::start()
 {
+	Object* background = new Object();
+	background -> setSolidness(SPECTRAL);
+	background -> setAltitude(0);
+	background -> setSprite("background");
+	background -> setPosition(Vector(40,12));
+
 	new Reticle();
 	new Fish(true);
 	new Fish(true);
@@ -52,6 +58,8 @@ void GameStart::start()
 
 	// Play background music.
 	p_music -> play();
+
+	WM.markForDelete(this);
 }
 
 // Override default draw so as not to display "value".

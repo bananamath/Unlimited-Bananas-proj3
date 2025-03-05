@@ -2,6 +2,8 @@
 #include "WorldManager.h"
 #include "EventMouse.h"
 #include "LogManager.h"
+#include "EventKeyboard.h"
+#include "GameManager.h"
 
 #include "Reticle.h"
 
@@ -82,6 +84,18 @@ int Reticle::eventHandler(const Event *p_e)
 			}
 		}
 
+		return 1;
+	}
+
+	if (p_e -> getType() == KEYBOARD_EVENT)
+	{
+		EventKeyboard *p_keyboard_event = (EventKeyboard *) p_e;
+		switch (p_keyboard_event -> getKey())
+		{
+			case Keyboard::Q:	// quit
+				GM.setGameOver();
+				break;
+			}
 		return 1;
 	}
 
