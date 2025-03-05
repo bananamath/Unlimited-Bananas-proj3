@@ -22,6 +22,7 @@ Reticle::Reticle()
 	setSprite("castbar");
 	
 	lure = NULL;
+	can_cast = true;
 }
 
 int Reticle::eventHandler(const Event *p_e)
@@ -46,7 +47,8 @@ int Reticle::eventHandler(const Event *p_e)
 			}*/
 		}
 		
-		if (p_mouse_event -> getMouseAction() == CLICKED)
+		// Can't cast while the ViewCaught window is up.
+		if (p_mouse_event -> getMouseAction() == CLICKED  && can_cast == true)
 		{
 			// If there is no lure, cast one. Otherwise, delete the lure.
 			if (lure == NULL)
@@ -84,6 +86,11 @@ int Reticle::eventHandler(const Event *p_e)
 	}
 
 	return 0;
+}
+
+void Reticle::setCast(bool cast)
+{
+	can_cast = cast;
 }
 
 // Draw reticle on window.

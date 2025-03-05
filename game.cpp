@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	RM.loadSprite("sprites/ff-spr-guppy.txt", "guppy");
 	RM.loadSprite("sprites/ff-spr-boot.txt", "boot");
 	RM.loadSprite("sprites/ff-spr-ampersalmon.txt", "ampersalmon");
-	RM.loadSprite("sprites/ff-spr-guppy.txt", "eel"); // TODO: Make eel sprite
+	RM.loadSprite("sprites/ff-spr-eel.txt", "eel");
 	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
 
 	// Set world boundaries to 80 horizontal, 24 vertical.
