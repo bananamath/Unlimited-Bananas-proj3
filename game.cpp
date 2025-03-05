@@ -26,7 +26,7 @@
 
 using namespace df;
 
-void runAllTests();
+//void runAllTests();
 
 int main(int argc, char *argv[])
 {
@@ -36,13 +36,18 @@ int main(int argc, char *argv[])
 	LM.setFlush(true);
 
 	RM.loadSprite("sprites/ff-spr-background.txt", "background");
+	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
 	RM.loadSprite("sprites/ff-spr-castbar.txt", "castbar");
 	RM.loadSprite("sprites/ff-spr-lure.txt", "lure");
+	RM.loadSprite("sprites/ff-spr-lure-hit.txt", "lure-hit");
 	RM.loadSprite("sprites/ff-spr-guppy.txt", "guppy");
 	RM.loadSprite("sprites/ff-spr-boot.txt", "boot");
 	RM.loadSprite("sprites/ff-spr-ampersalmon.txt", "ampersalmon");
 	RM.loadSprite("sprites/ff-spr-eel.txt", "eel");
-	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
+	RM.loadSprite("sprites/ff-spr-bluefish.txt", "bluefish");
+	RM.loadSprite("sprites/ff-spr-flounder.txt", "flounder");
+	RM.loadSprite("sprites/ff-spr-yellowfin.txt", "yellowfin");
+	
 
 
 

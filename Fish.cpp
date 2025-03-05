@@ -31,62 +31,104 @@ Fish::Fish(bool force_guppy)
 
 	// Switch statement for random fish creation
 	int rval = rand() % 100;
-
+	
 	if (force_guppy == true)
 	{
 		rval = 0;
 	}
 
-	if (rval < 33) {
-		//guppy
+	if (rval < 15) {
+		//guppy, 15% (after guaranteed at start)
+
 		setFishName("Guppy");
 		setFishSprite("guppy");
 		setFishRarity("Common");
 		setFishSpeed(20);	// SLOW
 
 		int minLength = 3;
-		int maxLength = 10;
-		int r = 1 / (rand() % 100);
-		int sz = (r * maxLength) + minLength;
+		float buffer = 10.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
-	else if (rval < 66) {
-		//salmon
+	else if (rval < 35) {
+		//salmon, 20%
 		setFishName("Ampersalmon");
 		setFishSprite("ampersalmon");
 		setFishRarity("Common");
 		setFishSpeed(10);	// MEDIUM
 
 		int minLength = 6;
-		int maxLength = 24;
-		int r = 1 / (rand() % 100);
-		int sz = (r * maxLength) + minLength;
+		float buffer = 24.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
-	else if (rval < 83) {
-		//eel
+	else if (rval < 55) {
+		//blue, %20
+		setFishName("Bluefish");
+		setFishSprite("bluefish");
+		setFishRarity("Common");
+		setFishSpeed(5);	// SLOW
+
+		int minLength = 12;
+		float buffer = 36.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
+		setFishSize(sz);
+	}
+	else if (rval < 67) {
+		//eel, 12%
 		setFishName("Eel");
 		setFishSprite("eel");
 		setFishRarity("Uncommon");
 		setFishSpeed(5);	// FAST
 
 		int minLength = 8;
-		int maxLength = 20;
-		int r = 1 / ((rand() % 100) + 1);
-		int sz = (r * maxLength) + minLength;
+		float buffer = 20.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
-	else {
-		//boot
+	else if (rval < 79) {
+		//flounder, 12%
+		setFishName("Flounder");
+		setFishSprite("flounder");
+		setFishRarity("Uncommon");
+		setFishSpeed(10);	// MEDIUM
+
+		int minLength = 5;
+		float buffer = 18.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
+		setFishSize(sz);
+	}
+	else if (rval < 91) {
+		//boot, 12%
 		setFishName("Boot");
 		setFishSprite("boot");
 		setFishRarity("Uncommon");
 		setFishSpeed(20);	// SLOW
 
 		int minLength = 8;
-		int maxLength = 7;	//dont worry about it (maxLength is a misnomer)
-		int r = 1 / (rand() % 100);
-		int sz = (r * maxLength) + minLength;
+		float buffer = 7.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
+		setFishSize(sz);
+	}
+	else {
+		//yellowfin, 9%
+		setFishName("Yellowfin Tuna");
+		setFishSprite("yellowfin");
+		setFishRarity("Rare");
+		setFishSpeed(5);	// FAST
+
+		int minLength = 29;
+		float buffer = 71.0f;
+		float r = (rand() % 100) / 100;
+		int sz = (int)(r * buffer) + minLength;
+		if (sz > 74)
+			setFishRarity("Legendary");
 		setFishSize(sz);
 	}
 
