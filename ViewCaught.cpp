@@ -1,6 +1,7 @@
 // Game includes
 #include "ViewCaught.h"
 #include "Fish.h"
+#include "Reticle.h"
 
 // Engine includes
 #include "WorldManager.h"
@@ -8,6 +9,7 @@
 #include "utility.h"
 #include "DisplayManager.h"
 #include "EventStep.h"
+#include "ObjectList.h"
 
 using namespace df;
 
@@ -25,6 +27,15 @@ ViewCaught::ViewCaught(std::string name, std::string sprite, int size, std::stri
     m_size = size;
     m_rarity = rarity;
     m_lifetime = 90;
+
+    Reticle* reticle = dynamic_cast <Reticle*> (WM.objectsOfType("Reticle")[0]);
+    reticle -> setCast(false);
+}
+
+ViewCaught::~ViewCaught()
+{
+    Reticle* reticle = dynamic_cast <Reticle*> (WM.objectsOfType("Reticle")[0]);
+    reticle -> setCast(true);
 }
 
 int ViewCaught::eventHandler(const df::Event* p_e)

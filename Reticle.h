@@ -13,11 +13,13 @@ namespace df
 		private:
 			std::string sprite;
 			Lure *lure;
+			bool can_cast = true;
 
 		public:
 			Reticle();
 			int draw(void) override;
 			int eventHandler(const df::Event *p_e) override;
+			void setCast(bool cast);
 	};
 }
 #endif // __RETICLE_H__

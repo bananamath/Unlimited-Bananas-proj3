@@ -20,6 +20,8 @@ namespace df
 			// Construct ViewCaught
 			ViewCaught(std::string name, std::string sprite, int size, std::string rarity);
 
+			~ViewCaught();
+
 			int eventHandler(const df::Event *p_e) override;
 
 			int draw(void) override;
