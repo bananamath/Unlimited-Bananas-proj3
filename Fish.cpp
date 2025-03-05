@@ -233,6 +233,26 @@ void Fish::hit(const EventCollision* p_collision_event)
 		if (m_bite == 0 && m_bite_cooldown == 0)
 		{
 			m_bite = 30;
+
+			if (p_collision_event -> getObject1() -> getType() == "Lure")
+			{
+				p_collision_event -> getObject1() -> setSprite("lure-hit");
+			}
+			else if (p_collision_event -> getObject2() -> getType() == "Lure")
+			{
+				p_collision_event -> getObject2() -> setSprite("lure-hit");
+			}
+		}
+		else
+		{
+			if (p_collision_event -> getObject1() -> getType() == "Lure")
+			{
+				p_collision_event -> getObject1() -> setSprite("lure");
+			}
+			else if (p_collision_event -> getObject2() -> getType() == "Lure")
+			{
+				p_collision_event -> getObject2() -> setSprite("lure");
+			}
 		}
 	}
 	
