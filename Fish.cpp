@@ -14,7 +14,7 @@
 
 using namespace df;
 
-Fish::Fish()
+Fish::Fish(bool force_guppy)
 {
 	m_name = "";
 	m_sprite = "";
@@ -31,6 +31,11 @@ Fish::Fish()
 
 	// Switch statement for random fish creation
 	int rval = rand() % 100;
+
+	if (force_guppy == true)
+	{
+		rval = 0;
+	}
 
 	if (rval < 33) {
 		//guppy

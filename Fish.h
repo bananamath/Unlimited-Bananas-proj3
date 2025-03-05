@@ -25,7 +25,7 @@ namespace df
 
 	public:
 		// Default Fish constructor
-		Fish();
+		Fish(bool force_guppy = false);
 
 		// Fish constructor with parameters given
 		/*Fish(std::string sprite, std::string name, int size, std::string rarity);*/

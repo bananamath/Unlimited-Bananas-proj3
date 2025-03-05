@@ -22,6 +22,7 @@
 
 #include "Reticle.h"
 #include "Fish.h"
+#include "GameStart.h"
 
 using namespace df;
 
@@ -43,6 +44,8 @@ int main(int argc, char *argv[])
 	RM.loadSprite("sprites/ff-spr-eel.txt", "eel");
 	RM.loadSprite("sprites/ff-spr-shadow.txt", "shadow");
 
+
+
 	// Set world boundaries to 80 horizontal, 24 vertical.
 	WM.setBoundary(Box(Vector(0,0),80,24));
 
@@ -60,6 +63,9 @@ int main(int argc, char *argv[])
 	new Fish();
 	new Fish();
 
+	// TODO: needs a sprite and background music
+	//new GameStart();
+	
 	// Game loop test.
 	GM.run();
 
