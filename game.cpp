@@ -55,12 +55,10 @@ int main(int argc, char *argv[])
 	RM.loadSound("sounds/ff-catch.mp3", "catch");
 
 	RM.loadMusic("sounds/ff-music.mp3", "music");
+	
+	WM.setBoundary(Box(Vector(0,0),78,24));
 
-	// Set world boundaries to 80 horizontal, 24 vertical.
-	WM.setBoundary(Box(Vector(0,0),80,24));
-
-	// Set view to 80 horizontal, 24 vertical.
-	WM.setView(Box(Vector(0,0),80,24));
+	WM.setView(Box(Vector(0,0),78,24));
 
 	/*Object* background = new Object();
 	background -> setSolidness(SPECTRAL);
