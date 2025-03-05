@@ -48,8 +48,10 @@ int main(int argc, char *argv[])
 	RM.loadSprite("sprites/ff-spr-flounder.txt", "flounder");
 	RM.loadSprite("sprites/ff-spr-yellowfin.txt", "yellowfin");
 	
-
-
+	RM.loadSound("sounds/ff-fishing-reel.mp3", "reel");
+	RM.loadSound("sounds/ff-splash.mp3", "splash");
+	RM.loadSound("sounds/ff-bite.mp3", "bite");
+	RM.loadSound("sounds/ff-catch.mp3", "catch");
 
 	// Set world boundaries to 80 horizontal, 24 vertical.
 	WM.setBoundary(Box(Vector(0,0),80,24));

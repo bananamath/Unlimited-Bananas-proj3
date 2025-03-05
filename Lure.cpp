@@ -1,6 +1,7 @@
 #include "Lure.h"
 #include "DisplayManager.h"
 #include "LogManager.h"
+#include "ResourceManager.h"
 
 using namespace df;
 
@@ -19,6 +20,9 @@ Lure::Lure(Vector position, int strength)
 	// The lure's final location is based on the strength it was cast with.
     target_y = position.getY() - strength*3+1;
 	LM.writeLog("Lure target y: %f", target_y);
+
+	p_sound = RM.getSound("reel");
+	p_sound -> play();
 }
 
 int Lure::eventHandler(const Event* p_e)
@@ -41,6 +45,9 @@ void Lure::step()
 	else if (getSolidness() == SPECTRAL)
 	{
 		setSolidness(SOFT);
+		p_sound -> stop();
+
+		RM.getSound("splash") -> play();
 	}
 }
 

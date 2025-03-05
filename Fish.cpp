@@ -7,6 +7,7 @@
 #include "WorldManager.h"
 #include "EventStep.h"
 #include "EventMouse.h"
+#include "ResourceManager.h"
 
 // Game includes
 #include "Fish.h"
@@ -190,6 +191,9 @@ int Fish::eventHandler(const Event* p_e)
 			if (p_mouse_event -> getMouseAction() == CLICKED)
 			{
 				new ViewCaught(m_name, m_sprite, m_size, m_rarity);
+				
+				RM.getSound("catch") -> play();
+				
 				WM.markForDelete(this);
 				new Fish();
 			}
@@ -242,6 +246,8 @@ void Fish::hit(const EventCollision* p_collision_event)
 			{
 				p_collision_event -> getObject2() -> setSprite("lure-hit");
 			}
+
+			RM.getSound("bite") -> play();
 		}
 		else
 		{

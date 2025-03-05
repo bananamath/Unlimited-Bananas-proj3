@@ -5,6 +5,7 @@
 // Engine includes
 #include "Object.h"
 #include "EventStep.h"
+#include "Sound.h"
 
 namespace df
 {
@@ -12,6 +13,7 @@ namespace df
 	{
 		private:
 			float target_y;
+			Sound *p_sound;
 
 		public:
 			Lure(Vector position, int strength);
