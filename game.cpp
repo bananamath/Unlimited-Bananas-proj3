@@ -33,7 +33,7 @@ int main(int argc, char *argv[])
 	// GameManager startup.
 	GM.startUp();
 
-	LM.setFlush(true);
+	//LM.setFlush(true);
 
 	RM.loadSprite("sprites/ff-spr-gamestart.txt", "gamestart");
 	RM.loadSprite("sprites/ff-spr-background.txt", "background");
