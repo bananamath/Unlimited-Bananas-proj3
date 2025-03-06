@@ -72,7 +72,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
@@ -80,7 +80,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>C:\Users\banan\Documents\Visual Studio 2022\Projects\SFML-3.0\lib;C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <IncludePath>C:\Users\smith\OneDrive\Documents\GitHub\SFML-3.0\include;..\SFML-3.0\include;$(IncludePath)</IncludePath>
@@ -164,7 +164,7 @@
     <ClInclude Include="Fish.h" />
     <ClInclude Include="Frame.h" />
     <ClInclude Include="GameManager.h" />
-    <ClInclude Include="Hero.h" />
+    <ClInclude Include="GameStart.h" />
     <ClInclude Include="InputManager.h" />
     <ClInclude Include="LogManager.h" />
     <ClInclude Include="Lure.h" />
@@ -174,10 +174,8 @@
     <ClInclude Include="ObjectList.h" />
     <ClInclude Include="ResourceManager.h" />
     <ClInclude Include="Reticle.h" />
-    <ClInclude Include="Saucer.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprite.h" />
-    <ClInclude Include="Star.h" />
     <ClInclude Include="utility.h" />
     <ClInclude Include="Vector.h" />
     <ClInclude Include="ViewCaught.h" />
@@ -200,7 +198,7 @@
     <ClCompile Include="Frame.cpp" />
     <ClCompile Include="game.cpp" />
     <ClCompile Include="GameManager.cpp" />
-    <ClCompile Include="Hero.cpp" />
+    <ClCompile Include="GameStart.cpp" />
     <ClCompile Include="InputManager.cpp" />
     <ClCompile Include="LogManager.cpp" />
     <ClCompile Include="Lure.cpp" />
@@ -210,10 +208,8 @@
     <ClCompile Include="ObjectList.cpp" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="Reticle.cpp" />
-    <ClCompile Include="Saucer.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite.cpp" />
-    <ClCompile Include="Star.cpp" />
     <ClCompile Include="utility.cpp" />
     <ClCompile Include="Vector.cpp" />
     <ClCompile Include="ViewCaught.cpp" />

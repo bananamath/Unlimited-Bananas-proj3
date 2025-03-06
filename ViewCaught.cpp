@@ -26,7 +26,7 @@ ViewCaught::ViewCaught(std::string name, std::string sprite, int size, std::stri
     setSprite(sprite);
     m_size = size;
     m_rarity = rarity;
-    m_lifetime = 90;
+    m_lifetime = 60;
 
     Reticle* reticle = dynamic_cast <Reticle*> (WM.objectsOfType("Reticle")[0]);
     reticle -> setCast(false);

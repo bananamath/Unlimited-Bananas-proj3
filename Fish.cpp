@@ -48,7 +48,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 3;
 		float buffer = 10.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
@@ -61,7 +61,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 6;
 		float buffer = 24.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
@@ -74,7 +74,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 12;
 		float buffer = 36.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
@@ -87,7 +87,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 8;
 		float buffer = 20.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
@@ -100,7 +100,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 5;
 		float buffer = 18.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
@@ -113,7 +113,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 8;
 		float buffer = 7.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		setFishSize(sz);
 	}
@@ -126,7 +126,7 @@ Fish::Fish(bool force_guppy)
 
 		int minLength = 29;
 		float buffer = 71.0f;
-		float r = (rand() % 100) / 100;
+		float r = (rand() % 100) / 100.0f;
 		int sz = (int)(r * buffer) + minLength;
 		if (sz > 74)
 			setFishRarity("Legendary");
